@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aangan AI Receptionist</title>
+<meta name="description" content="An AI phone receptionist for Aangan Studio that answers every enquiry in seconds, qualifies it, books a design consultation and hands designers a complete brief.">
+<style>
+:root { color-scheme: light; --bg: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781; --ring: rgba(11,11,11,0.10); --accent: #2a78d6; }
+@media (prefers-color-scheme: dark) { :root:where(:not([data-theme="light"])) { color-scheme: dark; --bg: #0d0d0d; --surface: #1a1a19; --ink: #fff; --ink-2: #c3c2b7; --ring: rgba(255,255,255,0.10); --accent: #3987e5; } }
+:root[data-theme="dark"] { color-scheme: dark; --bg: #0d0d0d; --surface: #1a1a19; --ink: #fff; --ink-2: #c3c2b7; --ring: rgba(255,255,255,0.10); --accent: #3987e5; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+.eyebrow { color: var(--muted); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; margin: 0 0 8px; }
+h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.15; margin: 0 0 16px; letter-spacing: -0.02em; }
+.lede { color: var(--ink-2); font-size: 18px; margin: 0 0 32px; }
+h2 { font-size: 18px; margin: 36px 0 12px; }
+ol, ul { padding-left: 20px; color: var(--ink-2); }
+li { margin: 6px 0; }
+.card { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 20px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.stat b { display: block; font-size: 26px; color: var(--ink); }
+.stat span { color: var(--muted); font-size: 14px; }
+code { font-size: 14px; }
+a { color: var(--accent); }
+footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">MESA Founder's Office · Case 03 · Aangan Studio</p>
+  <h1>An AI receptionist that answers every enquiry — day or night</h1>
+  <p class="lede">Aangan Studio was losing roughly half its enquiries to slow replies, and a reply within an hour converts four times better. This voice agent answers the studio phone instantly, qualifies the caller against the founder's own rubric, books a design consultation, and hands the designer a complete brief — without ever quoting a price.</p>
+
+  <div class="grid">
+    <div class="card stat"><b>24×7</b><span>every call answered by the AI</span></div>
+    <div class="card stat"><b>5 criteria</b><span>from the founder's qualification rubric</span></div>
+    <div class="card stat"><b>~₹5.6 / min</b><span>to run, tracked per call</span></div>
+  </div>
+
+  <h2>How a call flows</h2>
+  <ol>
+    <li><b>Vaani voice agent</b> (Gemini 3.5 Flash) answers, separates new enquiries from clients and vendors, and gathers the project details.</li>
+    <li>Qualified callers are offered real free slots and booked straight into the designer's <b>Google Calendar</b>.</li>
+    <li>After the call, <b>Gemini</b> extracts the lead, a rules engine re-checks it, and a guardrail audit flags any price quote or off-scope advice.</li>
+    <li>A <b>HubSpot</b> deal is created and the designer gets a <b>Telegram</b> handoff note with an Accept button.</li>
+    <li>A private dashboard tracks volume, after-hours share, bookings, designer pickup time and cost per booked consultation.</li>
+  </ol>
+
+  <h2>Guardrails</h2>
+  <ul>
+    <li>Never quotes a price, range or per-sq-ft rate — the studio's own pricing guide forbids it.</li>
+    <li>No design, Vastu or structural advice; off-topic questions are redirected, then the call is closed.</li>
+    <li>Never invents an appointment time; budget and decision-maker doubts are flagged, not pushed.</li>
+  </ul>
+
+  <h2>Stack</h2>
+  <p style="color:var(--ink-2)">Vaani AI · Gemini · Node on Vercel · Supabase · HubSpot · Google Calendar (Apps Script) · Telegram</p>
+
+  <footer>Class project prototype with mock designers and test data. The operational dashboard is private.</footer>
+</main>
+</body>
+</html>

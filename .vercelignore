@@ -1,0 +1,8 @@
+.env
+test/
+apps-script/
+node_modules/
+setup/
+scripts/
+prompts/
+.vercel/

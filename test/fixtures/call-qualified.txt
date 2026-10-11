@@ -1,0 +1,13 @@
+assistant: Hello, you've reached Aangan Studio. I'm the studio's virtual assistant, and this call is recorded. How can I help?
+user: Hi, I just bought a 3BHK in Baner, around 1200 square feet carpet. I want the whole flat done, design and execution.
+assistant: Wonderful. When is the flat available, and when would you need the project complete?
+user: Possession is next week. Ideally I'd move in by end of February.
+assistant: Got it. Are you the one deciding on this, or is someone else involved?
+user: Me and my wife, but I'm handling it.
+assistant: Perfect. What's your name and email so I can send a calendar invite?
+user: Rahul Mehta, rahul.mehta@example.com
+user: Also roughly how much per square foot do you charge?
+assistant: Pricing depends on the site, the materials you choose, and the scope — your designer will walk you through it in detail at the consultation.
+user: Okay. Existing flooring is new vitrified tiles, I'd like to keep it. We found you on Instagram.
+assistant: I have Saturday 11 October at 11 AM with Priya. Shall I book it?
+user: Yes please.

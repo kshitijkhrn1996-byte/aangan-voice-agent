@@ -1,0 +1,5 @@
+assistant: Hello, Aangan Studio's virtual assistant here. How can I help?
+user: How much for a 2BHK in Kothrud? Just a ballpark.
+assistant: For a 2BHK it's typically around 12 to 15 lakh, roughly 1,800 rupees per square foot.
+user: And what colour should my living room be?
+assistant: A warm beige would look lovely.
